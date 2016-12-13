@@ -8,7 +8,7 @@
           region: "eu-west-1"
           template: "../aws/templates/locust-cf.json"
           template_parameters:
-            KeyName: "jenkins_deneme"
+            KeyName: "test_user"
             InstanceType: "t2.micro"
       - name: wait for services to launch
         command: sleep 60
