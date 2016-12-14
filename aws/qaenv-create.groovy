@@ -3,7 +3,7 @@ node {
     env.WORKSPACE = pwd()
     def home = "${env.WORKSPACE}"
     stage 'Checkout latest code from repository'
-    checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/otgcjm/devopstest.git']]])
+    checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/previousdeveloper/Dockerized-Locust.git']]])
     try {
     stage 'build locust image'                      
     sh """
