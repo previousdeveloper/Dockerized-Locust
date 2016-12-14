@@ -8,7 +8,7 @@ RUN apt-get install -y python-zmq
 RUN apt-get install -y git
 RUN apt-get -y update
 
-RUN git clone https://github.com/otgcjm/devopstest.git
+RUN git clone https://github.com/previousdeveloper/Dockerized-Locust.git
 
 EXPOSE 8089
 EXPOSE 5557
